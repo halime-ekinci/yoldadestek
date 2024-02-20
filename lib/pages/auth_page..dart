@@ -12,7 +12,7 @@ class AuthService {
   }) async {
     await _firebaseAuth
         .verifyPhoneNumber(
-      timeout: Duration(seconds: 30),
+      timeout: const Duration(seconds: 30),
       phoneNumber: "+90$phone",
       verificationCompleted: (phoneAuthCredential) async {
         return;

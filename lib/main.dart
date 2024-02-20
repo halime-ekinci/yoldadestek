@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: CheckUserLoggedInOrNot(),
+      home: const CheckUserLoggedInOrNot(),
     );
   }
 }
@@ -45,7 +45,7 @@ class _CheckUserLoggedInOrNotState extends State<CheckUserLoggedInOrNot> {
   void initState() {
     AuthService.isLoggedIn().then((value) {
       if (value) {
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));
       } else {
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => RegisterPage()));
       }
@@ -55,7 +55,7 @@ class _CheckUserLoggedInOrNotState extends State<CheckUserLoggedInOrNot> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(child: CircularProgressIndicator()),
     );
   }

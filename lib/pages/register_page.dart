@@ -8,6 +8,8 @@ import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class RegisterPage extends StatefulWidget {
+  const RegisterPage({super.key});
+
   @override
   _RegisterPageState createState() => _RegisterPageState();
 }
@@ -253,8 +255,8 @@ class _RegisterPageState extends State<RegisterPage> {
                               });
                         }
                       },
-                      child: const Text("Kayıt Ol"),
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.yellow, foregroundColor: Colors.black),
+                      child: const Text("Kayıt Ol"),
                     ),
                   ],
                 ),

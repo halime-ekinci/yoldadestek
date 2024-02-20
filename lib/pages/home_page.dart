@@ -19,11 +19,11 @@ class MyButton extends StatefulWidget {
   final bool isSelected;
 
   const MyButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.onPressed,
     required this.isSelected,
-  }) : super(key: key);
+  });
 
   @override
   _MyButtonState createState() => _MyButtonState();
@@ -247,7 +247,7 @@ class _HomePageState extends State<HomePage> {
                               _handlePressed("Diğer");
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context) => OtherPage()),
+                                MaterialPageRoute(builder: (context) => const OtherPage()),
                               );
                             },
                           ),

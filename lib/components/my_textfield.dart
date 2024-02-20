@@ -8,7 +8,7 @@ class MyTextField extends StatefulWidget {
   final TextInputType? keyboardType;
   final VoidCallback? onTap;
 
-  const MyTextField({
+  const MyTextField({super.key,
     required this.controller,
     required this.hintText,
     this.validator,
@@ -35,7 +35,7 @@ class _MyTextFieldState extends State<MyTextField> {
               }
               return null;
             },
-        style: TextStyle(color: Color(0xfffcfcfc)),
+        style: const TextStyle(color: Color(0xfffcfcfc)),
         controller: widget.controller,
         decoration: InputDecoration(
             enabledBorder: const OutlineInputBorder(
@@ -49,7 +49,7 @@ class _MyTextFieldState extends State<MyTextField> {
             fillColor: Colors.transparent,
             filled: true,
             hintText: widget.hintText,
-            hintStyle: TextStyle(color: Color(0xfffcfcfc), fontWeight: FontWeight.w300)),
+            hintStyle: const TextStyle(color: Color(0xfffcfcfc), fontWeight: FontWeight.w300)),
       ),
     );
   }
@@ -60,38 +60,38 @@ class PhoneTypeField extends StatelessWidget {
   final TextEditingController controller;
 
   const PhoneTypeField({
-    Key? key,
+    super.key,
     required this.hintText,
     required this.controller,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 7.0),
       child: IntlPhoneField(
-        style: TextStyle(
+        style: const TextStyle(
           color: Colors.white,
         ),
-        dropdownTextStyle: TextStyle(
+        dropdownTextStyle: const TextStyle(
           color: Colors.white,
         ),
         controller: controller,
-        dropdownIcon: Icon(Icons.arrow_drop_down, color: Colors.white),
+        dropdownIcon: const Icon(Icons.arrow_drop_down, color: Colors.white),
         decoration: InputDecoration(
           enabledBorder: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
             borderSide: BorderSide(color: Colors.white),
           ),
-          focusedBorder: OutlineInputBorder(
+          focusedBorder: const OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(10)),
             borderSide: BorderSide(color: Colors.green),
           ),
           fillColor: Colors.transparent,
           filled: true,
-          counterStyle: TextStyle(color: Colors.white),
+          counterStyle: const TextStyle(color: Colors.white),
           hintText: hintText,
-          hintStyle: TextStyle(color: Color(0xfffcfcfc), fontWeight: FontWeight.w300),
+          hintStyle: const TextStyle(color: Color(0xfffcfcfc), fontWeight: FontWeight.w300),
         ),
         initialCountryCode: 'TR',
         onSaved: (phone) {
@@ -101,7 +101,6 @@ class PhoneTypeField extends StatelessWidget {
           }
         },
         onChanged: (phone) {
-          print(phone.completeNumber);
         },
       ),
     );
@@ -113,7 +112,7 @@ class BloodTypeDropdown extends StatefulWidget {
   final String hintText;
   final String? Function(String?)? valid;
 
-  const BloodTypeDropdown({Key? key, required this.controller, required this.hintText, this.valid}) : super(key: key);
+  const BloodTypeDropdown({super.key, required this.controller, required this.hintText, this.valid});
 
   @override
   _BloodTypeDropdownState createState() => _BloodTypeDropdownState();
@@ -147,14 +146,14 @@ class _BloodTypeDropdownState extends State<BloodTypeDropdown> {
                   }
                   return null;
                 },
-            icon: Icon(Icons.arrow_drop_down, color: Colors.white),
+            icon: const Icon(Icons.arrow_drop_down, color: Colors.white),
             decoration: InputDecoration(
               enabledBorder: InputBorder.none,
               focusedBorder: InputBorder.none,
               fillColor: Colors.transparent,
               filled: true,
               hintText: widget.hintText,
-              hintStyle: TextStyle(color: Color(0xfffcfcfc), fontWeight: FontWeight.w300),
+              hintStyle: const TextStyle(color: Color(0xfffcfcfc), fontWeight: FontWeight.w300),
             ),
             value: _selectedBloodType,
             onChanged: (String? newValue) {
@@ -169,7 +168,7 @@ class _BloodTypeDropdownState extends State<BloodTypeDropdown> {
                 value: value,
                 child: Text(
                   value,
-                  style: TextStyle(color: Colors.white), // Seçenek metin rengi
+                  style: const TextStyle(color: Colors.white), // Seçenek metin rengi
                 ),
               );
             }).toList(),
