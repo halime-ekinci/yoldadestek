@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719549052862",
+    "project_id": "yolda-destek",
+    "storage_bucket": "yolda-destek.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719549052862:android:d9a0277c216ca922db2bef",
+        "android_client_info": {
+          "package_name": "com.yoldadestek.yoldadestek"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARZrU5TtpygtTiuQK3BeQPdChgh4SEtjQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
