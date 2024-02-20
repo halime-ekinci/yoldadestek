@@ -17,7 +17,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: Colors.transparent, statusBarBrightness: Brightness.light,));
+    SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light,
+    ));
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Yolda Destek',
@@ -29,6 +32,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
 class CheckUserLoggedInOrNot extends StatefulWidget {
   const CheckUserLoggedInOrNot({super.key});
 
@@ -41,11 +45,9 @@ class _CheckUserLoggedInOrNotState extends State<CheckUserLoggedInOrNot> {
   void initState() {
     AuthService.isLoggedIn().then((value) {
       if (value) {
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => HomePage()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => HomePage()));
       } else {
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => RegisterPage()));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => RegisterPage()));
       }
     });
     super.initState();

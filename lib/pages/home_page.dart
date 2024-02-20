@@ -28,6 +28,7 @@ class MyButton extends StatefulWidget {
   @override
   _MyButtonState createState() => _MyButtonState();
 }
+
 class _MyButtonState extends State<MyButton> {
   @override
   Widget build(BuildContext context) {
@@ -90,13 +91,14 @@ class _HomePageState extends State<HomePage> {
         children: [
           Container(
             decoration: const BoxDecoration(
-                image: DecorationImage(image: AssetImage('assets/backgroundd.png'), fit: BoxFit.cover)
-            ),
+                image: DecorationImage(image: AssetImage('assets/backgroundd.png'), fit: BoxFit.cover)),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: MediaQuery.of(context).size.height * 0.030,),
+              SizedBox(
+                height: MediaQuery.of(context).size.height * 0.030,
+              ),
 
               //üst kısım
               Expanded(

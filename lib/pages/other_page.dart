@@ -18,7 +18,6 @@ class OtherPage extends StatelessWidget {
               ),
             ),
           ),
-
           Center(
             child: Padding(
               padding: EdgeInsets.all(screenWidth * 0.03),
@@ -26,7 +25,10 @@ class OtherPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Image.asset("assets/logo_beyaz_trs.png", height: screenHeight * 0.30,),
+                  Image.asset(
+                    "assets/logo_beyaz_trs.png",
+                    height: screenHeight * 0.30,
+                  ),
                   SizedBox(height: screenHeight * 0.020),
                   Text(
                     'DİĞER ACİL YARDIM SEBEBİ',
@@ -63,7 +65,8 @@ class OtherPage extends StatelessWidget {
                           makingPhoneCall(context);
                         },
                         child: Padding(
-                          padding: EdgeInsets.symmetric(vertical: screenHeight * 0.0144, horizontal: screenWidth * 0.027),
+                          padding:
+                              EdgeInsets.symmetric(vertical: screenHeight * 0.0144, horizontal: screenWidth * 0.027),
                           child: Text(
                             'Gönder',
                             style: TextStyle(fontSize: screenWidth * 0.048),

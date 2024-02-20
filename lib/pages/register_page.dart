@@ -32,13 +32,13 @@ class _RegisterPageState extends State<RegisterPage> {
     super.initState();
     _requestLocationPermission();
   }
+
   Future<void> _requestLocationPermission() async {
     var status = await Permission.location.request();
 
     if (status.isGranted) {
       _getCurrentLocation();
     } else {
-
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Konum verilerine erişmek için izin gereklidir.'),
@@ -66,8 +66,7 @@ class _RegisterPageState extends State<RegisterPage> {
     _currentPosition = await Geolocator.getCurrentPosition(
       desiredAccuracy: LocationAccuracy.high,
     );
-    _locationController.text =
-    '${_currentPosition?.latitude}, ${_currentPosition?.longitude}';
+    _locationController.text = '${_currentPosition?.latitude}, ${_currentPosition?.longitude}';
   }
 
   Future<void> _saveUserData(String uid) async {

@@ -14,7 +14,6 @@ class MyTextField extends StatefulWidget {
     this.validator,
     this.keyboardType,
     this.onTap,
-
   });
 
   @override
@@ -109,7 +108,6 @@ class PhoneTypeField extends StatelessWidget {
   }
 }
 
-
 class BloodTypeDropdown extends StatefulWidget {
   final TextEditingController controller;
   final String hintText;
@@ -143,7 +141,7 @@ class _BloodTypeDropdownState extends State<BloodTypeDropdown> {
           child: DropdownButtonFormField<String>(
             menuMaxHeight: 200,
             validator: widget.valid ??
-                    (value) {
+                (value) {
                   if (value == null || value.isEmpty) {
                     return 'Lütfen bir ${widget.hintText} girin';
                   }

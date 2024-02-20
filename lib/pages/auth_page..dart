@@ -4,6 +4,7 @@ class AuthService {
   static final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
 
   static String verifyId = "";
+
   static Future sentOtp({
     required String phone,
     required Function errorStep,
@@ -33,8 +34,7 @@ class AuthService {
   }
 
   static Future loginWithOtp({required String otp}) async {
-    final cred =
-    PhoneAuthProvider.credential(verificationId: verifyId, smsCode: otp);
+    final cred = PhoneAuthProvider.credential(verificationId: verifyId, smsCode: otp);
 
     try {
       final user = await _firebaseAuth.signInWithCredential(cred);
@@ -53,7 +53,6 @@ class AuthService {
   static Future logout() async {
     await _firebaseAuth.signOut();
   }
-
 
   static Future<bool> isLoggedIn() async {
     var user = _firebaseAuth.currentUser;
