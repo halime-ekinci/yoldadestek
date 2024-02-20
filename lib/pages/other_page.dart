@@ -63,7 +63,7 @@ class OtherPage extends StatelessWidget {
                           makingPhoneCall(context);
                         },
                         child: Padding(
-                          padding: EdgeInsets.symmetric(vertical: screenHeight * 0.0144, horizontal: screenWidth * 0.027), // 12 ve 24 boyutunu MediaQuery ile ayarladık
+                          padding: EdgeInsets.symmetric(vertical: screenHeight * 0.0144, horizontal: screenWidth * 0.027),
                           child: Text(
                             'Gönder',
                             style: TextStyle(fontSize: screenWidth * 0.048),

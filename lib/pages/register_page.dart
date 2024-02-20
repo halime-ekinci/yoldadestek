@@ -24,21 +24,21 @@ class _RegisterPageState extends State<RegisterPage> {
   final _chronicDiseaseController = TextEditingController();
   final _medicationController = TextEditingController();
   final TextEditingController _otpContoller = TextEditingController();
-  final _locationController = TextEditingController(); // Controller for location input
+  final _locationController = TextEditingController();
   Position? _currentPosition;
 
   @override
   void initState() {
     super.initState();
-    _requestLocationPermission(); // Request permission on app initialization
+    _requestLocationPermission();
   }
   Future<void> _requestLocationPermission() async {
     var status = await Permission.location.request();
 
     if (status.isGranted) {
-      _getCurrentLocation(); // Fetch location if permission granted
+      _getCurrentLocation();
     } else {
-      // Handle permission denied scenario, e.g., show an informative dialog
+
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Konum verilerine erişmek için izin gereklidir.'),
@@ -51,19 +51,15 @@ class _RegisterPageState extends State<RegisterPage> {
     bool serviceEnabled;
     LocationPermission permission;
 
-    // Check for location service status
     serviceEnabled = await Geolocator.isLocationServiceEnabled();
     if (!serviceEnabled) {
-      // Handle location services disabled scenario, e.g., show a dialog
       return;
     }
 
-    // Check for location permissions
     permission = await Geolocator.checkPermission();
     if (permission == LocationPermission.denied) {
       permission = await Geolocator.requestPermission();
       if (permission == LocationPermission.denied) {
-        // Handle permission denied scenario, e.g., show a dialog
         return;
       }
     }
@@ -75,7 +71,6 @@ class _RegisterPageState extends State<RegisterPage> {
   }
 
   Future<void> _saveUserData(String uid) async {
-    // Kullanıcı Firestore'a kaydedilecek verileri oluşturma
     Map<String, dynamic> userData = {
       'name': _nameController.text,
       'surname': _surnameController.text,
@@ -165,7 +160,6 @@ class _RegisterPageState extends State<RegisterPage> {
                         );
 
                         if (pickedDate != null) {
-                          // Sadece tarihi alma
                           final formattedDate = "${pickedDate.day}/${pickedDate.month}/${pickedDate.year}";
                           _birthdateController.text = formattedDate;
                         }
