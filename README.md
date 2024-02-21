@@ -15,19 +15,35 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-Yolda Destek - Flutter Uygulaması
-Project Description:
-Yolda Destek (On the Road Support) is a mobile application aimed at facilitating quick assistance in legal and health-related issues worldwide. Through this application, users can easily reach out to relevant aid organizations with just one click in times of need. The application promptly forwards users' location information and the nature of their problem to the relevant authorities for swift resolution. Moreover, penalties can be applied to individuals providing false alerts. To utilize the application, users must have their location services enabled and be connected to the internet.
+Support on the Road
+Support on the Road is a mobile application designed to provide efficient assistance for various legal and health-related issues worldwide. Built on Flutter and Firebase, the application targets specific categories outlined by the United Nations, namely peace, justice, strong institutions, and gender equality.
 
-User Guide:
-Download the application and log in with the provided user credentials.
-Identify the encountered issue on the screen and click on the respective button.
-Then, click on the "Emergency Assistance" button to submit the data to the emergency aid organization.
-If the encountered situation is not listed, click on the "Other" button to briefly describe the situation on the opened page.
-Notes:
-Users must use the application online to provide their location information and report the issue.
-The application utilizes location data to provide quick assistance to users.
-Relevant aid organizations will promptly assess the submitted information and provide assistance accordingly.
-Bu README dosyası, Yolda Destek uygulamasının kullanımı ve işlevselliği hakkında bilgi sağlamak için oluşturulmuştur. Uygulama, acil durumlarda yardım almayı hızlı ve etkili bir şekilde sağlamak için tasarlanmıştır.
+Objective
+The primary goal of the Support on the Road project is to streamline the process of seeking aid from relevant organizations, minimizing time wastage during emergencies. By leveraging technology, individuals facing challenging situations can swiftly report their circumstances to the appropriate authorities with just a few clicks, ensuring prompt resolution of incidents.
 
+Features
+Category-based Reporting: Users can select the relevant category (peace, justice, strong institutions, gender equality) corresponding to their issue.
+One-Click Assistance: Upon selecting the category, users can easily report their situation to emergency aid organizations with a single click.
+Custom Reporting: If the user's situation does not fit into predefined categories, they can provide a brief description of their circumstances for assistance.
+Location-based Assistance: The application utilizes device location services to provide accurate location information to aid organizations.
+Offline Support: In situations where internet connectivity is unavailable, the application automatically prompts users to initiate a phone call for assistance.
+User Authentication: Users are required to log in with provided credentials to access the application's features, ensuring accountability for reported incidents.
+Penalty for False Reporting: To maintain the integrity of the system, punitive measures are in place for individuals found to be making false reports.
+Getting Started
+Download and Installation: Users can download the Support on the Road application from the respective app store for their device platform.
+User Authentication: Upon launching the application, users are prompted to log in using provided credentials.
+Reporting Incident: Users select the category matching their situation from the options provided on the screen.
+Emergency Assistance: After selecting the category, users can click on the emergency assistance button to report their situation to aid organizations.
+Custom Reporting: If the user's situation is not listed, they can provide a brief description, which will also be reported to emergency aid organizations.
+Requirements
+Flutter framework
+Firebase integration
+Location services enabled on the device
+Internet connectivity for real-time reporting
+Disclaimer
+Support on the Road is intended for genuine emergency situations only. False reporting may lead to legal consequences. Users are encouraged to use the application responsibly and refrain from misuse.
+
+Contributing
+Contributions to the Support on the Road project are welcome. For major changes, please open an issue first to discuss potential updates.
+Note: This README provides an overview of the Support on the Road application, its features, usage guidelines, and necessary information for potential contributors and users.
 
