@@ -15,4 +15,35 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-The name of our application is Support on the Road. It serves the categories of peace, justice, strong institutions and gender equality determined by the United Nations. At the same time, our application is written in flutter and firebase goggle programming languages. The aim of our on-the-road support project is to receive support from relevant aid organizations without wasting time in all kinds of legal and health-related problems experienced in the world. Thanks to this project, people in difficult situations will be able to report their situation to the relevant organizations with a single click using the application, and thus the location information of these organizations and the information of the people who reported their situation will be obtained. and the incident will be resolved as soon as possible by saving time. .
+# Yolda Destek Uygulaması
+
+Yolda Destek, dünya genelinde yaşanan acil durumlar ve sağlık problemleri için destek almayı kolaylaştıran bir mobil uygulamadır. Bu uygulama sayesinde kullanıcılar, yaşadıkları acil durumu tek bir tıkla ilgili yardım kuruluşlarına iletebilir ve bu kuruluşlar kısa sürede müdahale edebilir.
+
+## Özellikler
+
+- Kullanıcılar acil durumu bildirebilmek için konum bilgisi gerekmektedir.
+- Kullanıcılar uygulamaya indirdikten ve giriş yaptıktan sonra, yaşadıkları soruna uygun butonları kullanarak acil yardım kuruluşlarına bildirimde bulunabilirler.
+- Uygulama içinde bulunan durumlar arasında kullanıcıya uygun bir seçenek yoksa, kullanıcı kendi durumunu kısa bir açıklama ile belirtebilir.
+- Veriler, acil yardım kuruluşlarına hızlı ve güvenli bir şekilde iletilir.
+
+## Kullanım
+
+1. Uygulamayı indirin ve kurun.
+2. Kullanıcı bilgilerinizle giriş yapın.
+3. Karşınıza çıkan sorunlar arasından yaşadığınızı seçin veya kendi durumunuzu açıklayın.
+4. Acil yardım butonuna tıklayarak verilerinizi ilgili kuruluşlara iletin.
+
+## Gereksinimler
+
+- Uygulamanın doğru çalışması için cihazınızda konum bilgisinin açık olması gerekmektedir.
+- Uygulamanın kullanılabilmesi için internet bağlantısı gereklidir.
+
+## Notlar
+
+- Uygulama üzerinden yapılan asılsız ihbarlar cezai yaptırımlara tabi olabilir.
+
+## Katkıda Bulunma
+
+- Bu projeye katkıda bulunmak isterseniz, lütfen bir pull request açın. Katkılarınızı memnuniyetle karşılayacağız.
+
+
