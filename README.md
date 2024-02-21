@@ -45,5 +45,6 @@ Support on the Road is intended for genuine emergency situations only. False rep
 
 ## Contributing
 Contributions to the Support on the Road project are welcome. For major changes, please open an issue first to discuss potential updates.
+
 Note: This README provides an overview of the Support on the Road application, its features, usage guidelines, and necessary information for potential contributors and users.
 
