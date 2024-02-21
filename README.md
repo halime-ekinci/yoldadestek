@@ -15,35 +15,19 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-# Yolda Destek Uygulaması
+Yolda Destek - Flutter Uygulaması
+Project Description:
+Yolda Destek (On the Road Support) is a mobile application aimed at facilitating quick assistance in legal and health-related issues worldwide. Through this application, users can easily reach out to relevant aid organizations with just one click in times of need. The application promptly forwards users' location information and the nature of their problem to the relevant authorities for swift resolution. Moreover, penalties can be applied to individuals providing false alerts. To utilize the application, users must have their location services enabled and be connected to the internet.
 
-Yolda Destek, dünya genelinde yaşanan acil durumlar ve sağlık problemleri için destek almayı kolaylaştıran bir mobil uygulamadır. Bu uygulama sayesinde kullanıcılar, yaşadıkları acil durumu tek bir tıkla ilgili yardım kuruluşlarına iletebilir ve bu kuruluşlar kısa sürede müdahale edebilir.
-
-## Özellikler
-
-- Kullanıcılar acil durumu bildirebilmek için konum bilgisi gerekmektedir.
-- Kullanıcılar uygulamaya indirdikten ve giriş yaptıktan sonra, yaşadıkları soruna uygun butonları kullanarak acil yardım kuruluşlarına bildirimde bulunabilirler.
-- Uygulama içinde bulunan durumlar arasında kullanıcıya uygun bir seçenek yoksa, kullanıcı kendi durumunu kısa bir açıklama ile belirtebilir.
-- Veriler, acil yardım kuruluşlarına hızlı ve güvenli bir şekilde iletilir.
-
-## Kullanım
-
-1. Uygulamayı indirin ve kurun.
-2. Kullanıcı bilgilerinizle giriş yapın.
-3. Karşınıza çıkan sorunlar arasından yaşadığınızı seçin veya kendi durumunuzu açıklayın.
-4. Acil yardım butonuna tıklayarak verilerinizi ilgili kuruluşlara iletin.
-
-## Gereksinimler
-
-- Uygulamanın doğru çalışması için cihazınızda konum bilgisinin açık olması gerekmektedir.
-- Uygulamanın kullanılabilmesi için internet bağlantısı gereklidir.
-
-## Notlar
-
-- Uygulama üzerinden yapılan asılsız ihbarlar cezai yaptırımlara tabi olabilir.
-
-## Katkıda Bulunma
-
-- Bu projeye katkıda bulunmak isterseniz, lütfen bir pull request açın. Katkılarınızı memnuniyetle karşılayacağız.
+User Guide:
+Download the application and log in with the provided user credentials.
+Identify the encountered issue on the screen and click on the respective button.
+Then, click on the "Emergency Assistance" button to submit the data to the emergency aid organization.
+If the encountered situation is not listed, click on the "Other" button to briefly describe the situation on the opened page.
+Notes:
+Users must use the application online to provide their location information and report the issue.
+The application utilizes location data to provide quick assistance to users.
+Relevant aid organizations will promptly assess the submitted information and provide assistance accordingly.
+Bu README dosyası, Yolda Destek uygulamasının kullanımı ve işlevselliği hakkında bilgi sağlamak için oluşturulmuştur. Uygulama, acil durumlarda yardım almayı hızlı ve etkili bir şekilde sağlamak için tasarlanmıştır.
 
 
